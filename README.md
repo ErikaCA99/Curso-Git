@@ -234,9 +234,38 @@ feat: add new search feature
 </details>
 
 <details><summary> <b> Clase 7 </b></summary>
+	
+## ¿Cuándo deshacer cambios?
 
+>Cuando el proyecto deja de funcionar.
+>Para recuperar código eliminado.
+>Para recuperar archivos eliminados.
 
+## ¿Qué comando debo usar para deshacer un cambio que hice en un archivo?
 
+>Esto depende de si desea deshacer el cambio en todo el commit o solo en el archivo.
+>Si desea deshacer el cambio en todo el commit, use git reset soft <commit_id>.
+>Si desea deshacer el cambio solo en el archivo, use git checkout -- <commit_id> <archivo> && git checkout HEAD -- <archivo>.
+
+## Comandos destructivos y no destructivos
+
+## Comandos destructivos
+
+>Estos afectan el historial de commits realizados.
+
+>Entre estos tenemos:
+
+- **git rebase**
+- **git commit amend**
+- **git reset**
+- **git push --force**
+
+## Comandos no destructivos
+>Trabajan en base al historial sin afectarlo.
+>Entre estos tenemos:
+
+- **git checkout**
+  
 </details>
  
 ## Comandos
@@ -271,7 +300,11 @@ feat: add new search feature
 | `git pull`               | Envia los commits locales al repositorio remoto y establece a la rama como referencia. |
 | `git pull --all`            | Descarga todos los cambios de todas las ramas remotas y  las fusiona con las del repositorio local. |
 | `git flow`                  | Inicializa un repositorio Git con el flujo de trabajo Git Flow.            |
-
+| `git reset --soft`          | Descarta todos los commits posteriores al especificado, pero mantiene los cambios en los archivos. |
+| `git reset --hard`          | Descarta todos los cambios desde el commit especificado, esto incluye archivos modificados y commits posteriores.|
+| `git revert HEAD~<n>`       | Deshace los cambios realizados en los últimos <n> commits desde el HEAD.   |
+| `git checkout <commit_id>`  | Recupera código especifico de commits.       				   |
+| `git checkout <SHA>`        |  UtilizaDO para mover el puntero HEAD a un commit específico identificado por su SHA (hash de commi.      |
 
 
 
