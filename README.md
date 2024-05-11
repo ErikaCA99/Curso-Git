@@ -174,7 +174,7 @@ Permite revertir cambios si algo sale mal.
 
 >Es un flujo de trabajo de git mas simple, porque solo utiliza dos ramas.
 
-![GitHub flow]([https://i.stack.imgur.com/pXRq8.png](https://th.bing.com/th/id/OIP.Nin6zQ9qL900hxG6Uo8shQAAAA?rs=1&pid=ImgDetMain))
+![GitHub flow](https://th.bing.com/th/id/OIP.Nin6zQ9qL900hxG6Uo8shQAAAA?rs=1&pid=ImgDetMain)
 
 >Estas son:
 - **main**: Es la rama principal que contiene el código estable.
@@ -192,9 +192,13 @@ Permite revertir cambios si algo sale mal.
 </details>
 
 <details><summary> <b> Clase 6 </b></summary>
+	
+## Buenas prácticas
+
+## ¿Cada cuánto hacer un commit?
 
 
-
+</details>
  
 ## Comandos
 
