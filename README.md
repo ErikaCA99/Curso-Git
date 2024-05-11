@@ -195,7 +195,46 @@ Permite revertir cambios si algo sale mal.
 	
 ## Buenas prácticas
 
+## Commits
 ## ¿Cada cuánto hacer un commit?
+>Los commits deben ser pequeños agrupando pequeñas mejoras o acciones.
+
+## ¿Como escribir un buen commit?
+>Se debe usar un verbo imperativo.Por ejemplo: "Add", "Feat", etc.
+>No se debe usar puntos suspensivos o punto final.
+>El commit debe tener como máximo 50 caracteres.
+>El commit debe ser claro y especifico.
+>Se debe usar un prefijo para los commits y que estos sean más semánticos.
+
+## Ejemplo
+
+feat: add new search feature
+^--^  ^--------------------^
+│     │
+│     └--> # Descripción de los cambios
+│
+└──------> # Tipo del cambio
+
+## Prefijos para los commits
+
+- **feat**: Nueva característica para el usuario.
+- **fix** : Es cuando se arregla un bug que afecta al usuario..
+- **perf**: Es para cambios que mejoran el rendimiento del sitio. 
+- **build**: Es para cambios en el sistema de build, tareas de despliegue o instalación.
+- **ci** : Es para cambios en la integración continua.
+- **docs** : Es para cambios en la documentación.
+- - **refactor**: Es para la refactorización del código como cambios de nombre de variables o funciones.
+- **style** : Es para cambios de formato, tabulaciones, espacios o puntos y coma, etc; no afectan al usuario.
+- **test** : Este añade tests o refactoriza uno existente.
+  
+## Ramas
+## ¿Como elegir un buen nombre para mi rama?
+>Para elegir un buen nombre de la rama, es recomendable usar el nombre de la accion que se va a realizar en la rama.
+
+</details>
+
+<details><summary> <b> Clase 7 </b></summary>
+
 
 
 </details>
