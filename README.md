@@ -54,12 +54,8 @@
 
 3.  **Commited:** Se crea un punto de guardado en el repositorio.
 
-```mermaid
-sequenceDiagram
-Modified ->> Staged: Edit the file
-Staged ->> Commited: Staged the file
-Commited->> Modified: Commit
-```
+![estados](https://th.bing.com/th/id/OIP.z6rqWadAMgRI9Y_GGPAv5QHaG0?rs=1&pid=ImgDetMain)
+
 
 </details>
 
