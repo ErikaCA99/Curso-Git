@@ -127,7 +127,8 @@ Permite revertir cambios si algo sale mal.
 - **Crear un repositorio local en nuestro ordenador.**
 - **Vincular el repositorio local con el repositorio remoto en GitHub**
 - **Sicronizar nuestros cambios del repositorio local con el repositorio remoto**
-<details><summary><b>
+
+</details>
 
 <details><summary> <b> Clase 4 </b></summary>
 	
@@ -142,17 +143,59 @@ Permite revertir cambios si algo sale mal.
 
 > Es un comando que nos permite descargar los cambios de nuestro repositorio remoto a nuestro repositorio local.
 
-## Malas prácticas
+## Malas prácticas del git push 
 
 > El git push -f ó git force push, es una mala práctica porque puede sobreescribir los cambios de otros usuarios en el repositorio remoto.
 
-## Como crear un pull request
+## Como crear un pull request o PR
 
->Un pull request es una solicitud de revision y fusión de los cambios de una rama en otra rama, esto se puede crear desde la plataforma de GitHub o desde la linea de comandos de git.
+> Un pull request es una solicitud de revision y fusión de los cambios de una rama en otra rama que son enviados al repositorio original.
+> Un pull request se puede crear desde la plataforma de GitHub o desde la linea de comandos de git.
+> Se puede hacer pull request con commits pequeños y poder visualizarlos, esto cuenta como una buena práctica.
+
+</details>
+
+<details><summary> <b> Clase 5 </b></summary>
+
+## Git flow
+
+>Es un flujo de trabajo ramificado que utiliza varias ramas.
+
+![Git flow](https://i.stack.imgur.com/pXRq8.png)
+
+>Ramas principales
+- **main o master**: Es la rama principal que contiene el código de producción.
+- **develop**: Esta rama de desarrollo donde se realizan los cambios principales.
+- **features**: Estos son caracteristicas nuevas del proyecto.
+- **release**: Estos son cambios de último momento.
+- **Hotflix**: Son parches o arreglar bugs pequeños que son parte del main.
+
+## GitHub flow
+
+>Es un flujo de trabajo de git mas simple, porque solo utiliza dos ramas.
+
+![GitHub flow]([https://i.stack.imgur.com/pXRq8.png](https://th.bing.com/th/id/OIP.Nin6zQ9qL900hxG6Uo8shQAAAA?rs=1&pid=ImgDetMain))
+
+>Estas son:
+- **main**: Es la rama principal que contiene el código estable.
+- **feature**: Esta rama es para desarrollar nuevas caracteristicas.
+
+## Trunk Based Development
+>Es una estrategia donde se prioriza hacer commits desde la rama principal, en caso de necesitar ramas se hacen PR pequeños para integrarlos lo antes posible.
+
+## Ship/ Show / Ask
+
+- **Ship**: Son los cambios listos para fusionarse con la rama principal.
+- **Show**: Son los cambios que deben ser revisados po CI antes de fusionarse con la rama principal.
+- **Ask** : Son los cambios que requieren de una PR, antes de ser fusionados.
+
+</details>
+
+<details><summary> <b> Clase 6 </b></summary>
 
 
 
-
+ 
 ## Comandos
 
 | Comando                     | Descripción                                                                |
@@ -184,6 +227,7 @@ Permite revertir cambios si algo sale mal.
 | `git push <alias> <rama 1> <rama 2> <rama N>` | Enviar los commits locales de una o varias ramas específicas a un repositorio remoto.|
 | `git pull`               | Envia los commits locales al repositorio remoto y establece a la rama como referencia. |
 | `git pull --all`            | Descarga todos los cambios de todas las ramas remotas y  las fusiona con las del repositorio local. |
+| `git flow`                  | Inicializa un repositorio Git con el flujo de trabajo Git Flow.            |
 
 
 
