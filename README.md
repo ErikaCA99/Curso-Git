@@ -63,6 +63,52 @@ Commited->> Modified: Commit
 
 </details>
 
+<details><summary> <b> Clase 2 </b></summary>
+
+## Conceptos Principales
+
+>El propósito principal de las ramas es el trabajo colaborativo en paralelo.
+
+1. **Rama (Branch)**: una versión paralela del proyecto que se utiliza para desarrollar nuevas características o corregir errores sin afectar la rama principal.
+2. **Rama principal (Main Branch)**: la rama predeterminada del proyecto, usualmente llamada "master".
+3. **Rama de características (Feature Branch)**: una rama que se utiliza para desarrollar una nueva característica o funcionalidad.
+4. **Rama de corrección (Hotfix Branch)**: una rama que se utiliza para corregir un error crítico en la rama principal.
+
+## Flujo de trabajo
+
+Crear una rama de características o corrección a partir de la rama principal.
+Realizar cambios y commits en la rama creada.
+Fusionar la rama creada con la rama principal cuando se complete el desarrollo.
+Eliminar la rama creada una vez fusionada.
+
+<details><summary><b> Ver Imagen</b></summary>
+	
+```mermaid
+graph LR
+
+Proyecto -- Rama principal --> B(( ))
+B(( )) --> G(( ))
+G(( )) --> H(( ))
+B(( )) --> C(( ))
+C(( )) --> D(( ))
+C(( )) --> J(( ))
+J(( )) --> L(( ))
+L(( )) -.-> F(( ))
+D(( )) --> E(( ))
+E(( )) --> F(( ))
+F(( )) --> K(( ))
+K(( )) --> M(( ))
+```
+</details>
+
+>Permite trabajar en diferentes versiones del proyecto de forma paralela.
+Facilita la colaboración entre desarrolladores.
+Permite revertir cambios si algo sale mal.
+
+>Las ramas de Git son una herramienta poderosa para gestionar diferentes versiones de un proyecto. Al entender cómo crear, cambiar, fusionar y eliminar ramas, los desarrolladores pueden trabajar de forma más eficiente y colaborativa en proyectos complejos.
+</details>
+
+
 ## Comandos
 
 | Comando                     | Descripción                                                                |
@@ -73,3 +119,6 @@ Commited->> Modified: Commit
 | `git restore --staged`      | Evita que los cambios en el área de preparación se incluyan en el commit.  |
 | `git commit`                | Genera un registro del cambio realizado.                                   |
 | `git log`                   | Muestra un historial de los commits realizados.                            |
+| `git branch <nombre_rama>`  | Crear una rama este tiene diferentes complementos.                         |
+| `git checkout <nombre_rama>`| Cambia la ubicación actual al "nombre_rama" con todos los cambios.         |
+| `git merge <nombre_rama>`   | Fusiona una rama.				                           |
