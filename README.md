@@ -112,7 +112,6 @@ Permite revertir cambios si algo sale mal.
 	
 ## GitHub
 
-
 ## Navegando por GitHub
 >Se puede:
 1. **Ver mi perfil y mis repositorio**: Podemos ver nuestra información de nuestro perfil, repositorios, organizaciones a las que pertenecemos y ver nuestras contribuciones.
@@ -128,6 +127,30 @@ Permite revertir cambios si algo sale mal.
 - **Crear un repositorio local en nuestro ordenador.**
 - **Vincular el repositorio local con el repositorio remoto en GitHub**
 - **Sicronizar nuestros cambios del repositorio local con el repositorio remoto**
+<details><summary><b>
+
+<details><summary> <b> Clase 4 </b></summary>
+	
+## Push, pull y pull request
+
+## ¿Que es git push?
+
+> Es un comando que nos permite subir los cambios de nuestro repositorio local a nuestro repositorio remoto.
+> Este se asocia a solo una rama.
+
+## ¿Que es git pull?
+
+> Es un comando que nos permite descargar los cambios de nuestro repositorio remoto a nuestro repositorio local.
+
+## Malas prácticas
+
+> El git push -f ó git force push, es una mala práctica porque puede sobreescribir los cambios de otros usuarios en el repositorio remoto.
+
+## Como crear un pull request
+
+>Un pull request es una solicitud de revision y fusión de los cambios de una rama en otra rama, esto se puede crear desde la plataforma de GitHub o desde la linea de comandos de git.
+
+
 
 
 ## Comandos
@@ -149,5 +172,22 @@ Permite revertir cambios si algo sale mal.
 | `git merge <nombre_rama>`   | Fusiona una rama.				                           |
 | `git remote add <alias> <URL-repositorio-remoto>`| Enlaza nuestro repositorio local con nuestro repositorio remoto.|
 | `git push <alias> main`     | Sicroniza nuestros cambios de mi repositorio local con mi repositorio remoto.|
+| `git clone <url-repositorio-remoto>`| Sirve para clonar un repositorio existente en un nuevo directorio local.|
+| `git remote -v`             | Muestra que nuestro repositorio esta enlazado con el repositorio remoto.   |
+| `git push origin <nombre_rama>`| Creamos una rama remota.				                   |
+| `git fetch`                 | Actualiza la información entre mi repositorio remoto y local.	           |
+| `git remote prune origin`   | Elimina las ramas del repositorio local que ya no se utilizan.	           |
+| `git merge `                | Combina los cambios de dos o mas ramas en una sola rama.		   |
+| `git push -u`               | Envia los commits locales al repositorio remote y establece la rama como referencia. |
+| `git push -d <alias> <rama-remota>` | Borrar una rama remota.                                            |
+| `git push -f`               | Fuerza un push.                                                            |
+| `git push <alias> <rama 1> <rama 2> <rama N>` | Enviar los commits locales de una o varias ramas específicas a un repositorio remoto.|
+| `git pull`               | Envia los commits locales al repositorio remoto y establece a la rama como referencia. |
+| `git pull --all`            | Descarga todos los cambios de todas las ramas remotas y  las fusiona con las del repositorio local. |
+
+
+
+
+
 
 
