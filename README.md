@@ -108,6 +108,27 @@ Permite revertir cambios si algo sale mal.
 >Las ramas de Git son una herramienta poderosa para gestionar diferentes versiones de un proyecto. Al entender cómo crear, cambiar, fusionar y eliminar ramas, los desarrolladores pueden trabajar de forma más eficiente y colaborativa en proyectos complejos.
 </details>
 
+<details><summary> <b> Clase 3 </b></summary>
+	
+## GitHub
+
+
+## Navegando por GitHub
+>Se puede:
+1. **Ver mi perfil y mis repositorio**: Podemos ver nuestra información de nuestro perfil, repositorios, organizaciones a las que pertenecemos y ver nuestras contribuciones.
+2. **Buscar perfiles, repositorios , etc.**: Podemos ver nuestros repositorios y repositorios de otras personas.
+3. **Proyectos**: Nos permite ver, crear y gestionar proyectos.
+4. **Organizaciones**: Nos permite crear repositorios privados y poder agregar personas a este.
+5. **Repositorios y codigo**: Podemos ver archivos de los repositorios publicos y personales, se puede realizar cambios en el código.
+6. **Acciones en los repositorios**: Las actions nos permiten automatizar las tareas en nuetro repositorio.
+   
+## Repositorio remoto:
+>Para esto necesitamos:
+- **Crear una cuenta en GitHub**
+- **Crear un repositorio local en nuestro ordenador.**
+- **Vincular el repositorio local con el repositorio remoto en GitHub**
+- **Sicronizar nuestros cambios del repositorio local con el repositorio remoto**
+
 
 ## Comandos
 
@@ -119,6 +140,14 @@ Permite revertir cambios si algo sale mal.
 | `git restore --staged`      | Evita que los cambios en el área de preparación se incluyan en el commit.  |
 | `git commit`                | Genera un registro del cambio realizado.                                   |
 | `git log`                   | Muestra un historial de los commits realizados.                            |
+| `git commit -amend-m`       | Permite editar el mensaje del commit.                                      |
+| `git branch `               | Nos muestra todas las ramas del repositorio actual.                        |
 | `git branch <nombre_rama>`  | Crear una rama este tiene diferentes complementos.                         |
+| `git switch <nombre_rama>`  | Permite cambiar de una rama a otra en nuestro repositorio loca.            |
 | `git checkout <nombre_rama>`| Cambia la ubicación actual al "nombre_rama" con todos los cambios.         |
+| `git branch -a`             | Permite ver a las ramas locales y remotas.                                 |
 | `git merge <nombre_rama>`   | Fusiona una rama.				                           |
+| `git remote add <alias> <URL-repositorio-remoto>`| Enlaza nuestro repositorio local con nuestro repositorio remoto.|
+| `git push <alias> main`     | Sicroniza nuestros cambios de mi repositorio local con mi repositorio remoto.|
+
+
