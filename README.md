@@ -267,6 +267,34 @@ feat: add new search feature
 - **git checkout**
   
 </details>
+
+<details><summary> <b> Clase 8 </b></summary>
+	
+## ¿Qué son los Hooks?
+>Los Hooks son scripts que se ejecutan automáticamente antes o después de que ocurra un evento específico en Git.
+>Estos eventos pueden ser: commits, pushes, entre otros.
+>Estos permiten automatizar tareas repetitivas, como enviar notificaciones por Slack o ejecutar pruebas unitarias.
+
+>Existen dos:
+- **Hooks del lado del cliente**
+  >Afectan solo al repositorio local que los contiene.
+  >Pueden ser:
+  >-**Pre-commit**: Se ejecuta antes de que se realice un commit. Se puede utilizar para verificar que el código cumpla con ciertos estándares o para ejecutar pruebas unitarias.
+  >-**Post-commit**: Se ejecuta después de que se realiza un commit. Se puede utilizar para enviar notificaciones por Slack o para actualizar automáticamente la documentación.
+  >-**Pre-push**: Se ejecuta antes de que se envíe un push al repositorio remoto. Se puede utilizar para verificar que no se estén enviando cambios no deseados.
+  >-**Post-push**: Se ejecuta después de que se envía un push al repositorio remoto. Se puede utilizar para actualizar automáticamente la rama de producción o para enviar notificaciones a otros desarrolladores.
+  >-**Post-checkout-Post-merge**: Permite limpiar un directorio de trabajo, tras realizar un checkout.
+- **Hooks del lado del servidor**
+  >Pueden ser:
+  >-**Pre-receive**: Comprueba los commits que se quieran guardar.
+  >-**update**: Es cuando llega ese git push y haces comprobaciones.
+  >-**post-receive**: Es cuando el push ya sea ha sincronizado y haces acciones. 
+  
+## ¿Qué son los Alias?
+>Son atajos que permiten personalizar los comandos de Git.
+
+
+ </details>
  
 ## Comandos
 
@@ -304,7 +332,8 @@ feat: add new search feature
 | `git reset --hard`          | Descarta todos los cambios desde el commit especificado, esto incluye archivos modificados y commits posteriores.|
 | `git revert HEAD~<n>`       | Deshace los cambios realizados en los últimos <n> commits desde el HEAD.   |
 | `git checkout <commit_id>`  | Recupera código especifico de commits.       				   |
-| `git checkout <SHA>`        |  UtilizaDO para mover el puntero HEAD a un commit específico identificado por su SHA (hash de commi.      |
+| `git checkout <SHA>`        |  Utilizado para mover el puntero HEAD a un commit específico identificado por su SHA (hash de commit).      |
+| `git cherry.pick <SHA>`     |  Aplica los cambios de un commit especifico al directorio de trabajo actual.      |
 
 
 
